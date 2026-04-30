@@ -1,4 +1,4 @@
- // 4NimBelakang_DoubleLinkedList
+// 4NimBelakang_DoubleLinkedList
 #include <iostream>
 using namespace std;
 
@@ -27,4 +27,7 @@ public:
         cout << "\nEnter the roll number of the student: ";
         cin >> nim;
 
-       
+        Node *newNode = new Node();
+        newNode->noMhs = nim;
+
+        
