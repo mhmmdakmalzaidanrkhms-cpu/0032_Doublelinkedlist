@@ -111,4 +111,23 @@ public:
         cout << "Record deleted\n";
     }
 
-    
+    void traverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty\n";
+            return;
+        }
+
+        Node *current = START;
+        cout << "\nAscending order:\n";
+
+        while (current != NULL)
+        {
+            cout << current->noMhs << " ";
+            current = current->next;
+        }
+        cout << endl;
+    }
+
+   
