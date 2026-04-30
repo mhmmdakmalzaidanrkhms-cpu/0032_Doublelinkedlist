@@ -1,7 +1,3 @@
-// 0032_DoubleLinkedList
-#include <iostream>
-using namespace std;
-
 // 4NimBelakang_DoubleLinkedList
 #include <iostream>
 using namespace std;
@@ -13,3 +9,9 @@ public:
     Node *next;
     Node *prev;
 };
+
+class DoubleLinkedList
+{
+private:
+    Node *START;
+
