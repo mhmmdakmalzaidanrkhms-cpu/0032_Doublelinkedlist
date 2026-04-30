@@ -130,4 +130,48 @@ public:
         cout << endl;
     }
 
-   
+    void revTraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty\n";
+            return;
+        }
+
+        Node *current = START;
+        while (current->next != NULL)
+            current = current->next;
+
+        cout << "\nDescending order:\n";
+        while (current != NULL)
+        {
+            cout << current->noMhs << " ";
+            current = current->prev;
+        }
+        cout << endl;
+    }
+
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty\n";
+            return;
+        }
+
+        int rollNo;
+        cout << "\nEnter roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL)
+            cout << "Record not found\n";
+        else
+            cout << "Record found\n";
+    }
+};
+
