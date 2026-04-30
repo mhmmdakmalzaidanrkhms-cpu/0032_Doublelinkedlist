@@ -1,4 +1,3 @@
-
 // 4NimBelakang_DoubleLinkedList
 #include <iostream>
 using namespace std;
@@ -16,3 +15,10 @@ class DoubleLinkedList
 private:
     Node *START;
 
+public:
+    DoubleLinkedList()
+    {
+        START = NULL;
+    }
+
+    
